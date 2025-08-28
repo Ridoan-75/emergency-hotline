@@ -7,41 +7,44 @@
     <link rel="stylesheet" href="output.css">
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-    <title>Document</title>
+    <link rel="icon" href="/assets/logo.png">
+    <title>Emergency Sevice</title>
 </head>
 
 <body>
     <header class="top-0 left-0 right-0 z-50">
-        <nav class="max-w-[1440px] container mx-auto px-4 py-4 flex items-center justify-between ">
-            <a href="">
-                <div class="font-bold text-2xl flex items-center gap-x-2">
-                    <img src="/assets/logo.png" class="w-12 " alt="">
-                    <span class="text-[#006747] font-bold leading-tight">Emergency <br>
-                        Service</span>
-                </div>
-            </a>
-
-            <!-- menu items -->
-            <div class="flex items-center gap-4 ">
-                <!-- hert icon -->
-                <div class="flex items-center gap-1 bg-green-100 px-5 py-2 rounded-full">
-                    <span id="heart-count" class="font-bold">0</span>
-                    <img src="/assets/heart.png" alt="hert-icon" class="w-6">
-                </div>
-
-                <!-- coin icon -->
-                <div class="flex items-center gap-1 bg-green-100 px-5 py-2 rounded-full">
-                    <span id="coin-count" class="font-bold">100</span>
-                    <img src="/assets/coin.png" alt="coin-icon" class="w-6">
-                </div>
-
-                <!-- copy icon -->
-                <div class="flex items-center gap-1 bg-[#00A63E] px-3 py-2 md:px-5 md:py-3 text-white rounded-full">
-                    <h1><span class="font-bold">0</span> Copy</h1>
-                </div>
+    <nav class="max-w-[1440px] container mx-auto px-4 py-4 flex flex-row items-center justify-between gap-4">
+        <a href="">
+            <div class="font-bold text-xl md:text-2xl flex items-center gap-x-2">
+                <img src="/assets/logo.png" class="w-10 md:w-12" alt="">
+                <span class="text-[#006747] font-bold leading-tight text-center md:text-left">
+                    Emergency <br> Service
+                </span>
             </div>
-        </nav>
-    </header>
+        </a>
+
+        <!-- menu items -->
+        <div class="flex items-center gap-2 md:gap-4">
+            <!-- heart icon -->
+            <div class="flex items-center gap-1 bg-green-100 px-4 md:px-5 py-2 rounded-full">
+                <span id="heart-count" class="font-bold">0</span>
+                <img src="/assets/heart.png" alt="hert-icon" class="w-5 md:w-6">
+            </div>
+
+            <!-- coin icon -->
+            <div class="flex items-center gap-1 bg-green-100 px-4 md:px-5 py-2 rounded-full">
+                <span id="coin-count" class="font-bold">100</span>
+                <img src="/assets/coin.png" alt="coin-icon" class="w-5 md:w-6">
+            </div>
+
+            <!-- copy icon -->
+            <div class="flex items-center gap-1 bg-[#00A63E] px-3 py-2 md:px-5 md:py-3 text-white rounded-full">
+                <span id="copy-count" class="font-bold">0</span>
+                <span>Copy</span>
+            </div>
+        </div>
+    </nav>
+</header>
 
     <!-- hero section -->
     <section
@@ -373,8 +376,7 @@
                         <i class="fa-solid fa-clock text-gray-500 text-xl sm:text-2xl"></i>
                         <p class="font-bold text-base sm:text-lg lg:text-xl">Call History</p>
                     </div>
-                    <button
-                        id="clear-btn"
+                    <button id="clear-btn"
                         class="px-5 py-2 sm:px-6 sm:py-[10px] text-base sm:text-lg rounded-full bg-green-600 hover:bg-green-700 text-white font-semibold cursor-pointer ">
                         Clear
                     </button>
@@ -386,7 +388,8 @@
         </section>
     </main>
 
-<!-- js -->
- <script src="script.js"></script>
+    <!-- js -->
+    <script src="script.js"></script>
 </body>
+
 </html>
